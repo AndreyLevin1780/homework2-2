@@ -35,6 +35,23 @@ public class Slytherin extends Hogwarts{
         return lustForPower;
     }
 
+    @Override
+    public String toString() {
+        return  "Имя: " + getFullName() +
+                ", магия: " + getMagic() +
+                ", трансгрессия: " +getTransgression() +
+                ", хитрость: " + getCraftiness() +
+                ", решительность: " + getResoluteness() +
+                ", амбициозность: " + getAmbitiousness() +
+                ", находчивость: " + getResourcefulness() +
+                ", жажда власти: " + getLustForPower() +
+                ".";
+    }
+
+    public static void printStudent(Slytherin student) {
+        System.out.println();
+        System.out.println(student.toString());
+    }
     public static void compareStudents(Slytherin student1, Slytherin student2) {
 
         if (student1.getCraftiness() < 0 || student1.getResoluteness() < 0 || student1.getAmbitiousness() < 0 || student1.getResourcefulness() < 0 || student1.getLustForPower() < 0 || student2.getCraftiness() < 0 || student2.getResoluteness() < 0 || student2.getAmbitiousness() < 0 || student2.getResourcefulness() < 0 || student2.getLustForPower() < 0) {

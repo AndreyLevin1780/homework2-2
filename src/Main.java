@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Griffindor gPotter = new Griffindor("Гарри Поттер", 95, 96, 61,70,54);
+        Griffindor gPotter = new Griffindor("Гарри Поттер", 99, 96, 61,70,54);
         Griffindor hGranger = new Griffindor("Гермиона Грейнджер", 86, 100, 78,53,55);
         Griffindor rWeasley = new Griffindor("Рон Уизли", 70, 54, 61,87,38);
 
@@ -20,10 +20,14 @@ public class Main {
         Slytherin gMontague = new Slytherin("Грэхэм Монтегю", 74,93,92,63,85,53,59);
         Slytherin gGoyle = new Slytherin("Грегори Гойл", 94,53,69,63,53,48,84);
 
-        Griffindor.compareStudents(gPotter, hGranger);
+        Griffindor.compareStudents(gPotter, rWeasley);
         Hufflepuff.compareStudents(cDiggory, jFinchFletchley);
         Ravenclaw.compareStudents(cChang, mBelby);
         Slytherin.compareStudents(gGoyle, gMontague);
-        Hogwarts.compareStudentsByBasicSkills(gPotter, dMalfoy, 2);
+        Hogwarts.compareStudentsByBasicSkills(gPotter, dMalfoy, 1);
+        Griffindor.printStudent(hGranger);
+        Hufflepuff.printStudent(zSmith);
+        Ravenclaw.printStudent(pPatil);
+        Slytherin.printStudent(gMontague);
     }
 }

@@ -36,7 +36,7 @@ public abstract class Hogwarts {
                                        } else {
                                                System.out.println(student1.getFullName() + " и " + student2.getFullName() + " обладают равной мощностью магии.");
                                        }
-
+                               break;
                        case 2:
                                if (student1.getTransgression() < 0 || student1.getTransgression() > 100 || student2.getTransgression() < 0 || student2.getTransgression() > 100) {
                                        System.out.println("Навык _трансгрессия_ не может быть отрицательным или иметь значение больше 100");
@@ -49,6 +49,7 @@ public abstract class Hogwarts {
                                        } else {
                                                System.out.println(student1.getFullName() + " и " + student2.getFullName() + " обладают равной мощностью трансгрессии.");
                                        }
+
                                }
         }
 }

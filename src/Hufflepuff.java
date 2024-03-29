@@ -23,6 +23,22 @@ public class Hufflepuff extends Hogwarts{
         return honesty;
     }
 
+    @Override
+    public String toString() {
+        return  "Имя: " + getFullName() +
+                ", магия: " + getMagic() +
+                ", трансгрессия: " +getTransgression() +
+                ", трудолюбие: " + getDiligence() +
+                ", верность: " + getFidelity() +
+                ", честность: " + getHonesty() +
+                ".";
+    }
+
+    public static void printStudent(Hufflepuff student) {
+        System.out.println();
+        System.out.println(student.toString());
+    }
+
     public static void compareStudents(Hufflepuff student1, Hufflepuff student2) {
 
         if (student1.getDiligence() < 0 || student1.getFidelity() < 0 || student1.getHonesty() < 0 || student2.getDiligence() < 0 || student2.getFidelity() < 0 || student2.getHonesty() < 0) {

@@ -24,6 +24,21 @@ private final int bravery;
         return bravery;
     }
 
+    @Override
+    public String toString() {
+        return "Имя: " + getFullName() +
+                ", магия: " + getMagic() +
+                ", трансгрессия: " +getTransgression() +
+                ", благородство: " + getGenerosity() +
+                ", честь: " + getHonor() +
+                ", храбрость: " + getBravery() +
+                ".";
+    }
+    public static void printStudent(Griffindor student) {
+        System.out.println();
+        System.out.println(student.toString());
+    }
+
     public static void compareStudents(Griffindor student1, Griffindor student2) {
 
         if (student1.getGenerosity() < 0 || student1.getHonor() < 0 || student1.getBravery() < 0 || student2.getGenerosity() < 0 || student2.getHonor() < 0 || student2.getBravery() < 0) {
