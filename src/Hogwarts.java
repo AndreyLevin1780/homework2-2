@@ -21,33 +21,33 @@ public abstract class Hogwarts {
                 return transgression;
         }
 
-        public static void compareStudentsByBasicSkills (Hogwarts student1, Hogwarts student2, int compareParameter) {
+        public void compareStudentsByBasicSkills (Hogwarts student, int compareParameter) {
 
                switch (compareParameter) {
                        case 1:
-                               if (student1.getMagic() < 0 || student1.getMagic() > 100 || student2.getMagic() < 0 || student2.getMagic() > 100) {
+                               if (this.getMagic() < 0 || this.getMagic() > 100 || student.getMagic() < 0 || student.getMagic() > 100) {
                                        System.out.println("Навык _магия_ не может быть отрицательным или иметь значение больше 100");
                                        System.exit(1);}
 
-                                       if (student1.getMagic() > student2.getMagic()) {
-                                               System.out.println(student1.getFullName() + " обладает бОльшей мощностью магии, чем " + student2.getFullName() + ".");
-                                       } else if (student1.getMagic() < student2.getMagic()) {
-                                               System.out.println(student2.getFullName() + " обладает бОльшей мощностью магии, чем " + student1.getFullName() + ".");
+                                       if (this.getMagic() > student.getMagic()) {
+                                               System.out.println(this.getFullName() + " обладает бОльшей мощностью магии, чем " + student.getFullName() + ".");
+                                       } else if (this.getMagic() < student.getMagic()) {
+                                               System.out.println(student.getFullName() + " обладает бОльшей мощностью магии, чем " + this.getFullName() + ".");
                                        } else {
-                                               System.out.println(student1.getFullName() + " и " + student2.getFullName() + " обладают равной мощностью магии.");
+                                               System.out.println(this.getFullName() + " и " + student.getFullName() + " обладают равной мощностью магии.");
                                        }
                                break;
                        case 2:
-                               if (student1.getTransgression() < 0 || student1.getTransgression() > 100 || student2.getTransgression() < 0 || student2.getTransgression() > 100) {
+                               if (this.getTransgression() < 0 || this.getTransgression() > 100 || student.getTransgression() < 0 || student.getTransgression() > 100) {
                                        System.out.println("Навык _трансгрессия_ не может быть отрицательным или иметь значение больше 100");
                                        System.exit(1);}
 
-                                       if (student1.getTransgression() > student2.getTransgression()) {
-                                               System.out.println(student1.getFullName() + " обладает бОльшей мощностью трансгрессии, чем " + student2.getFullName() + ".");
-                                       } else if (student1.getTransgression() < student2.getTransgression()) {
-                                               System.out.println(student2.getFullName() + " обладает бОльшей мощностью трансгрессии, чем " + student1.getFullName() + ".");
+                                       if (this.getTransgression() > student.getTransgression()) {
+                                               System.out.println(this.getFullName() + " обладает бОльшей мощностью трансгрессии, чем " + student.getFullName() + ".");
+                                       } else if (this.getTransgression() < student.getTransgression()) {
+                                               System.out.println(student.getFullName() + " обладает бОльшей мощностью трансгрессии, чем " + this.getFullName() + ".");
                                        } else {
-                                               System.out.println(student1.getFullName() + " и " + student2.getFullName() + " обладают равной мощностью трансгрессии.");
+                                               System.out.println(this.getFullName() + " и " + student.getFullName() + " обладают равной мощностью трансгрессии.");
                                        }
 
                                }

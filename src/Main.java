@@ -24,7 +24,7 @@ public class Main {
         cDiggory.compareStudents(jFinchFletchley);
         cChang.compareStudents(mBelby);
         gGoyle.compareStudents(gMontague);
-        Hogwarts.compareStudentsByBasicSkills(gPotter, dMalfoy, 1);
+        gPotter.compareStudentsByBasicSkills(dMalfoy, 1);
         hGranger.printStudent(hGranger);
         zSmith.printStudent(zSmith);
         pPatil.printStudent(pPatil);
