@@ -49,7 +49,7 @@ public abstract class Hogwarts {
                                        } else {
                                                System.out.println(this.getFullName() + " и " + student.getFullName() + " обладают равной мощностью трансгрессии.");
                                        }
-
+                               break;
                                }
         }
 }
