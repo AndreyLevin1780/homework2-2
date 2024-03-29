@@ -34,53 +34,52 @@ private final int bravery;
                 ", храбрость: " + getBravery() +
                 ".";
     }
-    public static void printStudent(Griffindor student) {
+    public void printStudent(Griffindor student) {
         System.out.println();
-        System.out.println(student.toString());
+        System.out.println(this.toString());
     }
 
-    public static void compareStudents(Griffindor student1, Griffindor student2) {
+    public void compareStudents(Griffindor student) {
 
-        if (student1.getGenerosity() < 0 || student1.getHonor() < 0 || student1.getBravery() < 0 || student2.getGenerosity() < 0 || student2.getHonor() < 0 || student2.getBravery() < 0) {
+        if (this.getGenerosity() < 0 || this.getHonor() < 0 || this.getBravery() < 0 || student.getGenerosity() < 0 || student.getHonor() < 0 || student.getBravery() < 0) {
             System.out.println("Навык ученика не может иметь отрицательное значение.");
             System.exit(1);
-            } else if (student1.getGenerosity() > 100 || student1.getHonor() > 100 || student1.getBravery() > 100 || student2.getGenerosity() > 100 || student2.getHonor() > 100 || student2.getBravery() > 100) {
+            } else if (this.getGenerosity() > 100 || this.getHonor() > 100 || this.getBravery() > 100 || student.getGenerosity() > 100 || student.getHonor() > 100 || student.getBravery() > 100) {
             System.out.println("Навык ученика не может быть больше 100.");
             System.exit(1);
         }
 
-        int student1totalScore = student1.getGenerosity() + student1.getHonor() + student1.getBravery();
-        int student2totalScore = student2.getGenerosity() + student2.getHonor() + student2.getBravery();
+        int student1totalScore = this.getGenerosity() + this.getHonor() + this.getBravery();
+        int student2totalScore = student.getGenerosity() + student.getHonor() + student.getBravery();
 
-        System.out.println("У " + student1.getFullName() +
-                " благородство = " + student1.getGenerosity() + " баллов, " +
-                "честь = " + student1.getHonor() + " баллов, " +
-                "храбрость = " + student1.getBravery() + " баллов.");
-        System.out.println("У " + student2.getFullName() +
-                " благородство = " + student2.getGenerosity() + " баллов, " +
-                "честь = " + student2.getHonor() + " баллов, " +
-                "храбрость = " + student2.getBravery() + " баллов.");
+        System.out.println("У " + this.getFullName() +
+                " благородство = " + this.getGenerosity() + " баллов, " +
+                "честь = " + this.getHonor() + " баллов, " +
+                "храбрость = " + this.getBravery() + " баллов.");
+        System.out.println("У " + student.getFullName() +
+                " благородство = " + student.getGenerosity() + " баллов, " +
+                "честь = " + student.getHonor() + " баллов, " +
+                "храбрость = " + student.getBravery() + " баллов.");
         System.out.println();
 
         if (student1totalScore > student2totalScore) {
-            System.out.println("У " + student1.getFullName() +
+            System.out.println("У " + this.getFullName() +
                     " сумма баллов равна " + student1totalScore +
-                    ", а у " + student2.getFullName() + "сумма баллов равна " + student2totalScore);
-            System.out.println(student1.getFullName() + " лучший Гриффиндорец, чем " + student2.getFullName() + ".");
+                    ", а у " + student.getFullName() + "сумма баллов равна " + student2totalScore);
+            System.out.println(this.getFullName() + " лучший Гриффиндорец, чем " + student.getFullName() + ".");
             System.out.println();
         } else if (student1totalScore < student2totalScore) {
-            System.out.println("У " + student1.getFullName() +
+            System.out.println("У " + this.getFullName() +
                     " сумма баллов равна " + student1totalScore +
-                    ", а у " + student2.getFullName() + " сумма баллов равна " + student2totalScore);
-            System.out.println(student2.getFullName() + " лучший Гриффиндорец, чем " + student1.getFullName() + ".");
+                    ", а у " + student.getFullName() + " сумма баллов равна " + student2totalScore);
+            System.out.println(student.getFullName() + " лучший Гриффиндорец, чем " + this.getFullName() + ".");
             System.out.println();
         } else {
-            System.out.println("У " + student1.getFullName() +
+            System.out.println("У " + this.getFullName() +
                     " сумма баллов равна " + student1totalScore +
-                    ", а у " + student2.getFullName() + " сумма баллов равна " + student2totalScore + ".");
+                    ", а у " + student.getFullName() + " сумма баллов равна " + student2totalScore + ".");
             System.out.println("Студенты по баллам равны.");
             System.out.println();
         }
-
         }
 }
