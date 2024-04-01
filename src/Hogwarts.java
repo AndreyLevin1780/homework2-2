@@ -52,4 +52,10 @@ public abstract class Hogwarts {
                                break;
                                }
         }
+
+        public void printStudent (){
+                System.out.println();
+                System.out.println(this.toString());
+        }
+
 }

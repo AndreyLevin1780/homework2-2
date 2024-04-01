@@ -34,11 +34,6 @@ public class Hufflepuff extends Hogwarts{
                 ".";
     }
 
-    public void printStudent(Hufflepuff student) {
-        System.out.println();
-        System.out.println(this.toString());
-    }
-
     public void compareStudents(Hufflepuff student) {
 
         if (this.getDiligence() < 0 || this.getFidelity() < 0 || this.getHonesty() < 0 || student.getDiligence() < 0 || student.getFidelity() < 0 || student.getHonesty() < 0) {

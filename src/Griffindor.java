@@ -34,10 +34,6 @@ private final int bravery;
                 ", храбрость: " + getBravery() +
                 ".";
     }
-    public void printStudent(Griffindor student) {
-        System.out.println();
-        System.out.println(this.toString());
-    }
 
     public void compareStudents(Griffindor student) {
 

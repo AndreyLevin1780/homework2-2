@@ -25,9 +25,10 @@ public class Main {
         cChang.compareStudents(mBelby);
         gGoyle.compareStudents(gMontague);
         gPotter.compareStudentsByBasicSkills(dMalfoy, 2);
-        hGranger.printStudent(hGranger);
-        zSmith.printStudent(zSmith);
-        pPatil.printStudent(pPatil);
-        gMontague.printStudent(gMontague);
+
+        hGranger.printStudent();
+        zSmith.printStudent();
+        pPatil.printStudent();
+        gMontague.printStudent();
     }
 }

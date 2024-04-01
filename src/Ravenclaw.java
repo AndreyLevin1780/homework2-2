@@ -34,10 +34,6 @@ public class Ravenclaw extends Hogwarts{
                 ".";
     }
 
-    public void printStudent(Ravenclaw student) {
-        System.out.println();
-        System.out.println(this.toString());
-    }
     public void compareStudents(Ravenclaw student) {
 
         if (this.getWisdom() < 0 || this.getCuteness() < 0 || this.getCreativeness() < 0 || student.getWisdom() < 0 || student.getCuteness() < 0 || student.getCreativeness() < 0) {

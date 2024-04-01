@@ -48,10 +48,7 @@ public class Slytherin extends Hogwarts{
                 ".";
     }
 
-    public void printStudent(Slytherin student) {
-        System.out.println();
-        System.out.println(this.toString());
-    }
+
     public void compareStudents(Slytherin student) {
 
         if (this.getCraftiness() < 0 || this.getResoluteness() < 0 || this.getAmbitiousness() < 0 || this.getResourcefulness() < 0 || this.getLustForPower() < 0 || student.getCraftiness() < 0 || student.getResoluteness() < 0 || student.getAmbitiousness() < 0 || student.getResourcefulness() < 0 || student.getLustForPower() < 0) {
